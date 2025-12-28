@@ -339,10 +339,10 @@ Unit 63 seems to only send request that 243 replies to. No other messages are ca
 
 ### ADDRESS 243
 Unit 243 seems to reply to 63 requests.
-|SRC | CTRL | LEN | DEV_ID  | - | - | - | OP | | | | | | | | | | | FREQUENCY | | TARGET FREQUENCY | | OUTDOOR TEMP | | | | | | | DISCHARGER TEMP | | | | | | | | |  | | FREQUENCE | | | EVAP GAS TEMP | | | | CRC | 
+|SRC | CTRL | LEN | DEV_ID  | - | - | - | OP | | | | | | | | | | | FREQUENCY | | TARGET FREQUENCY | | OUTDOOR TEMP | | | | | | | DISCHARGER TEMP | | | | | | | | |  | | FREQUENCY | | | EVAP GAS TEMP | | | | CRC | 
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 |243|1|48|1|0|0|255|192|6|0|0|2|0|0|0|0|0|0|0|0|0|64|30|17|159|0|0|60|20|30|0|1|30|0|145|0|0|0|0|34|0|24|0|29|0|0|0|68|
 
-|SRC | CTRL | LEN | DEV_ID | - | - | - | OP | | | | | | | | FREQUENCE |  | | | | | | | | | | | |  | WATER PUMP SPEED? | | | | | | | | |  | |  | WATER FLOW? | | | | | | CRC | 
+|SRC | CTRL | LEN | DEV_ID | - | - | - | OP | | | | | | | | FREQUENCY |  | | | | | | | | | | | |  | WATER PUMP SPEED? | | | | | | | | |  | |  | WATER FLOW? | | | | | | CRC | 
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 |243|1|48|1|0|0|255|193|6|0|0|0|0|26|0|0|0|0|7|0|0|0|129|0|0|0|29|0|0|100|29|0|0|0|0|3|129|0|0|0|0|0|129|0|0|0|0|243|
