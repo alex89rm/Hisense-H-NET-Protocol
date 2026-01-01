@@ -115,7 +115,7 @@ Status update request sent every 60s. Acknoledged from 146.
 
 
 Request sent when there is a remote command.
-| SRC | CTRL | LEN | | CTRL_ID | DEV_ID | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |  | |  | | | | | CRC | 
+| SRC | CTRL | LEN | | CTRL_ID | DEV_ID | - | OP | SUB-OP | WRITE_LOCK1? | HVAC_MODE | WRITE_LOCK2? | CYCLE1 WATER SET TEMP | CYCLE2 WATER SET TEMP | DHW SET TEMP | POOL SET TEMP | CYCLE1 ENABLE | CYCLE2 ENABLE ? | CYCLE 1 ROOM1 SET TEMP| | | | | | | | | | | | | | | | | | | | | |  | |  | | | | | CRC | 
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 |41|0|48|202|160|1|1|107|62|31|8|255|11|12|45|24|0|0|26|28|28|28|28|28|28|28|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|211|
 
