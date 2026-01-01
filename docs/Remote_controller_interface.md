@@ -37,7 +37,7 @@ Every 60s there is a status update request from 41. The request is acknowledged 
 
 When there is a change of the working mode on the master controller if leads to a parameters update message from 146.The message is ackowledged from 41.
 
-|SRC | CTRL | LEN | DEV_ID | - | DEV_ID | - | - | - | MODE: | VALUE | CYCLE1 SET TEMP: | VALUE | CYCLE2 SET TEMP: | VALUE | ROOM1 SET TEMP: | VALUE  | ROOM? SET TEMP: | VALUE | ROOM? SET TEMP: | VALUE | ROOM? SET TEMP: | VALUE | ROOM? SET TEMP: | VALUE | ROOM? SET TEMP: | VALUE | CRC |
+|SRC | CTRL | LEN | DEV_ID | - | DEV_ID | - | OP | SUB-OP | MODE: | VALUE | CYCLE1 SET TEMP: | VALUE | CYCLE2 SET TEMP: | VALUE | ROOM1 SET TEMP: | VALUE  | ROOM? SET TEMP: | VALUE | ROOM? SET TEMP: | VALUE | ROOM? SET TEMP: | VALUE | ROOM? SET TEMP: | VALUE | ROOM? SET TEMP: | VALUE | CRC |
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 |146|0|32|9|1|9|0|99|62|1|8|3|6|4|12|10|23|11|28|12|28|13|28|14|28|15|28|16|28|17|28|115|
 
