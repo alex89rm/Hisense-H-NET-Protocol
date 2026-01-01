@@ -78,17 +78,12 @@ ACK from 35
 ## DEVICE DISCOVERY
 When the Hi-mit interface is looking for devices on H-LINK bus the following messages are sent: (This messages were logged with **no device connected**  on H-LINK bus)
 
-| SRC | CTRL |LEN | | CTRL_ID | | | |CRC |
-|--|--|--|--|--|--|--|--|--|
-|41|0|9|202|160|255|255|241|146|
-
 | SRC | CTRL |LEN | | CTRL_ID | | | |  |CRC |
 |--|--|--|--|--|--|--|--|--|--|
 |57|3|10|202|160|255|255|0|0|99|
 
-## AUTODISCOVERY ??
+## KEEP-ALIVE ??
 From time to time these messages appears on the bus, they are not always grouped together and they are not acknowledged, maybe they are used to report their presence ?
-
 
 |35|0|10|1|0|1|255|15|20|238| <- UPDATE: VALUE 15 & 20 CHANGE OVER TIME, ARE THEY TEMPERATURE ?
 |50|0|9|1|1|1|255|241|6|
@@ -108,7 +103,7 @@ DSW1 field is thebynary encoded value set on the Hi-mit interface
 
 ### ADDRESS 41
 
-Request (KEEP ALIVE/ DISCOVERY ?) sent every 30s.
+Request (KEEP ALIVE ?) sent every 30s.
 | SRC | CTRL |LEN | | CTRL_ID | | | |CRC |
 |--|--|--|--|--|--|--|--|--|
 |41|0|9|202|160|255|255|241|146|
