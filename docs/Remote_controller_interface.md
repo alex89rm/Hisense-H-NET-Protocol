@@ -7,14 +7,14 @@ Observing the traffic on the bus we can see there are different units. These are
 |--|--|
 | 41 | Hi-Mit remote controller  |
 | 47 | Hi-Mit remote controller |
-| 50 | Indoor Unit |
+| 50 | IDU |
 | 57 | Hi-Mit remote controller |
 | 63 | Hi-Mit remote controller |
 | 34 |  |
-| 35 | Outodoor Unit |
-| [[#address-146]] | Indoor Unit |
-| 242 |  |
-| 243 |  |
+| 35 | ODU |
+| 146 | System Controller ? |
+| 242 | IDU Controller ? |
+| 243 | ODU Controller ?|
 
 
 
