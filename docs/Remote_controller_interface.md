@@ -247,6 +247,10 @@ This message appears very rarely:
 
 |146|0|34|9|1|9|0|100|153|120|182|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|16|
 
+This message apperead when CYCLE2 was enabled on the master controller under Space Heating. Cycle 2 was not configured before. OP 96 could be used when there is a configuration update.
+|146|0|43|9|1|9|0|96|62|0|0|73|119|185|131|9|0|0|16|2|192|1|0|24|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|178|
+
+
 ### ADDRESS 50
 | SRC | CTRL |LEN | DEV_ID | - | DEV_ID | - | - | CRC |
 |--|--|--|--|--|--|--|--|--|
