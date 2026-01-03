@@ -242,6 +242,11 @@ This is sent when AUTO MODE is selected on MASTER CONTROLLER:
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 |146|0|28|1|1|1|0|99|62|1| **4** |3|28|11|0|12|0|13|0|14|0|15|0|16|0|17|0|80|
 
+This is sent when a configuration parameter is modified on MASTER CONTROLLER:
+|SRC | CTRL | LEN | DEV_ID | - | DEV_ID | | OP | - | | MODE | CYCLE MODE | WATER SET TEMP CYCLE1 | WATER SET TEMP CYCLE2 | DHW SET TEMP | POOL SET TEMP | ERROR CODE | | | CYCLE1 ROOM1 SET TEMP | CYCLE1 ROOM2 SET TEMP| CYCLE1 ROOM3 SET TEMP | CYCLE1 ROOM4 SET TEMP | CYCLE2 ROOM1 SET TEMP| CYCLE2 ROOM2     | | | | | | MIN WATER SUPPLY TEMP HEAT | MAX WATER SUPPLY TEMP HEAT | |  |  | | | | | | CRC | 
+|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+|146|0|41|9|1|9|0|101|16|32|16|32|16|32|16|32|16|32|16|32|16|32|16|32|6|22|20|45|12|22|23|47|40|45|24|33|0|0|0|0|122|
+
 #### UNKNOWN MESSAGE
 This message appears very rarely:
 
