@@ -115,7 +115,7 @@ Status update request sent every 60s. Acknoledged from 146.
 
 
 Request sent when there is a remote command.
-| SRC | CTRL | LEN | | CTRL_ID | DEV_ID | - | OP | SUB-OP | WRITE_LOCK1? | HVAC_MODE | WRITE_LOCK2? | CYCLE1 WATER SET TEMP | CYCLE2 WATER SET TEMP (MAY BE COOL SET TEMP?) | DHW SET TEMP | POOL SET TEMP | CYCLE1 ENABLE | CYCLE2 ENABLE ? | CYCLE 1 ROOM1 SET TEMP| | | | | | | | | | | | | | | | | | | | | |  | |  | | | | | CRC | 
+| SRC | CTRL | LEN | | CTRL_ID | DEV_ID | - | OP | SUB-OP | WRITE_LOCK1? | HVAC_MODE | WRITE_LOCK2? | CYCLE1 WATER SET TEMP | CYCLE2 WATER SET TEMP (MAY BE COOL SET TEMP?) | DHW SET TEMP | POOL SET TEMP | CYCLE1 ENABLE | CYCLE2 ENABLE ? | CYCLE 1 ROOM1 SET TEMP | CYCLE 2 ROOM1 SET TEMP | CYCLE 1 ROOM2 SET TEMP | CYCLE 2 ROOM2 SET TEMP | CYCLE 1 ROOM3 SET TEMP | CYCLE 2 ROOM3 SET TEMP | CYCLE 1 ROOM4 SET TEMP | CYCLE 2 ROOM4 SET TEMP | | | | | | | | | | | | | | |  | |  | | | | | CRC | 
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 |41|0|48|202|160|1|1|107|62|31|8|255|11|12|45|24|0|0|26|28|28|28|28|28|28|28|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|211|
 
@@ -207,7 +207,7 @@ This parameter sets the working mode of the unit: HEAT / COOL / AUTO. Only one o
 This status update message is requested periodically from 41. **OP** is now set to **97**
 
 The parameter are in the same order as the table above: 1) MODE, 2)PUMP, 3) WATER SET TEMP, ETC ..
-|SRC | CTRL | LEN | DEV_ID | - | DEV_ID | | OP | - | | MODE | CYCLE MODE | WATER SET TEMP CYCLE1 | WATER SET TEMP CYCLE2 | DHW SET TEMP | POOL SET TEMP | ERROR CODE | | | CYCLE1 ROOM1 SET TEMP | CYCLE1 ROOM2 SET TEMP| CYCLE1 ROOM3 SET TEMP | CYCLE1 ROOM4 SET TEMP | CYCLE2 ROOM1 SET TEMP| CYCLE2 ROOM2 SET TEMP| CYCLE2 ROOM3 SET TEMP | CYCLE2 ROOM4 SET TEMP | ROOM ENABLE | | DHW CONFIG | PUMP STATUS | WATERPUMP CONFIG | | | | | | |  | |  |  | | | | | | CRC | 
+|SRC | CTRL | LEN | DEV_ID | - | DEV_ID | | OP | - | | MODE | CYCLE MODE | WATER SET TEMP CYCLE1 | WATER SET TEMP CYCLE2 | DHW SET TEMP | POOL SET TEMP | ERROR CODE | | | CYCLE1 ROOM1 SET TEMP | CYCLE2 ROOM1 SET TEMP| CYCLE1 ROOM2 SET TEMP | CYCLE2 ROOM2 SET TEMP | CYCLE1 ROOM3 SET TEMP| CYCLE2 ROOM3 SET TEMP| CYCLE1 ROOM4 SET TEMP | CYCLE2 ROOM4 SET TEMP | ROOM ENABLE | | DHW CONFIG | PUMP STATUS | WATERPUMP CONFIG | | | | | | |  | |  |  | | | | | | CRC | 
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 |146|0|48|1|1|1|0|97|62|0|8|0| **11** |12|45|24|0|0|0|26|28|28|28|28|28|28|28|0|0|0|0|160|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|242|
 
