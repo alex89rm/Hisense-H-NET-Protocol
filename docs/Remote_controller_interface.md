@@ -114,7 +114,7 @@ Status update request sent every 60s. Acknoledged from 146.
 |41|0|9|202|160|1|1|97|2|
 
 
-Request sent when there is a remote command.
+Remote Command
 | SRC | CTRL | LEN | | CTRL_ID | DEV_ID | - | OP | SUB-OP | WRITE_LOCK1 | HVAC_MODE | WRITE_LOCK2 | CYCLE1 WATER SET TEMP | CYCLE2 WATER SET TEMP | DHW SET TEMP | POOL SET TEMP | CYCLE ENABLE | ? | CYCLE 1 ROOM1 SET TEMP | CYCLE 2 ROOM1 SET TEMP | CYCLE 1 ROOM2 SET TEMP | CYCLE 2 ROOM2 SET TEMP | CYCLE 1 ROOM3 SET TEMP | CYCLE 2 ROOM3 SET TEMP | CYCLE 1 ROOM4 SET TEMP | CYCLE 2 ROOM4 SET TEMP | ROOM ENABLE | | | | | | | | | | | | | |  | |  | | | | | CRC | 
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 |41|0|48|202|160|1|1|107|62|31|8|255|11|12|45|24|0|0|26|28|28|28|28|28|28|28|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|211|
@@ -143,11 +143,6 @@ Request sent when there is a remote command.
 |--|--|--|--|--|--|--|--|
 | C2 ROOM4 | C1 ROOM4 | C2 ROOM3 | C1 ROOM3 | C2 ROOM2 | C1 ROOM2 | C2 ROOM1 | C1 ROOM1 |
 
-
-Request sent when there is a remote command.
-| SRC | CTRL | LEN | | CTRL_ID | DEV_ID | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | CRC | 
-|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
-|41|0|48|202|160|1|1|107|62|0|8|0|11|12|45|24|0|0|26|28|28|28|28|28|28|28|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|51|
 
 ## ADDRESS 146
 Messages coming from 146 seems to be associated with machine operation parameters that could be stored in the INDOOR UNIT. This is the common header:
