@@ -303,7 +303,7 @@ MODE is 32 when CYCLE 1 is OFF, when COOL MODE on CYCLE1 is enabled it changes t
 IDU CONFIGURATION becomes 1 when cooling is enabled. Change to 17 when water pump is running. <- **EDIT: NOT 100% SURE** (PUMP SEEMS TO RUN EVEN WHEN PUMP=1 , MAYBE 1->CYCLE 1 ENABLED AND 17-> CYCLE1&ROOM1 ENABLED)
 WATER SET TEMP IS SET WHEN CYCLE 1 IS ENABLED
 
-|SRC | CTRL | LEN | DEV_ID | - | DEV_ID | - | - | WATER OUT TEMP ? | | | ? | | | WATER SET TEMP | | AMBIENT TEMP (SIMILAR VALUE) |  | REQUESTED PUMP PWM | | FLOW ?| | | | | | | | | ? | | CRC | 
+|SRC | CTRL | LEN | DEV_ID | - | DEV_ID | - | - | WATER OUT TEMP ? | | | WATER SET TEMP HEAT ? | | | WATER SET TEMP COLD ?| | AMBIENT TEMP (SIMILAR VALUE) |  | REQUESTED PUMP PWM | | FLOW ?| | | | | | | | | ? | | CRC | 
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 |50|0|32|1|1|1|0|159|30|129|129|20|60|0|7|129|30|26|100|3|0|0|0|0|0|0|0|0|0|2|0|111|
 
