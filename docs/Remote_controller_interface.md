@@ -189,7 +189,7 @@ These are the parameters ID :
 | CYCLE2 ROOM4 SET TEMP **?**    | 17 |
 | **ROOM ENABLE**       | 18 |
 | **ROOM ECO MODE?**       | 19 |
-| DHW CONFIG ?           | 20 |
+| DHW STATUS           | 20 |
 | **PUMP STATUS**  | 21 |
 | WATER PUMP CONFIG?        | 22 |
 
@@ -208,8 +208,8 @@ This parameter sets the working mode of the unit: HEAT / COOL / AUTO. Only one o
 |--|--|--|--|--|--|--|--|
 |? | ? | ? |  PUMP ENABLE ? | ? | ? |CYCLE2 ECO MODE| CYCLE1 ECO MODE |
 
-#### DHW CONFIG
-0 DHW BOOST OFF, 128 DHW BOOST ON
+#### DHW STATUS
+0 DHW OFF, 128 DHW ON
 
 #### PUMP STATUS
 0 PUMP OFF, 128 PUMP RUNNING
