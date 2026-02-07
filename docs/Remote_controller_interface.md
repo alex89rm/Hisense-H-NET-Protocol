@@ -286,11 +286,11 @@ This message apperead when CYCLE2 was enabled on the master controller under Spa
 |50|0|9|1|1|1|255|241|6|
 
 
-|SRC | CTRL | LEN | DEV_ID |- | DEV_ID |- |- |- | MODE | PUMP ? | WATER SET TEMP | ? | IDU GAS TEMPERATURE |- | IDU LIQUID TEMPERATURE | ~~WATER OUT PHEX TEMP~~ NOT SURE | WATER INLET TEMP | | | | | | | | |  | CRC |
+|SRC | CTRL | LEN | DEV_ID |- | DEV_ID |- |- |- | IDU MODE | IDU CONFIGURATION | WATER SET TEMP | ? | IDU GAS TEMPERATURE |- | IDU LIQUID TEMPERATURE | ~~WATER OUT PHEX TEMP~~ NOT SURE | WATER INLET TEMP | | | | | | | | |  | CRC |
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 |50|0|28|1|1|1|0|255|24|32| *0* |22|24| **16** |129|20| **11** |12|0|0|22|0|62|0|6|0|2|122|
 
-#### MODE
+#### IDU MODE
 9: COOL - C1 ?,
 
 32: HEATPUMP OFF/ STBY ?,
@@ -298,7 +298,9 @@ This message apperead when CYCLE2 was enabled on the master controller under Spa
 65: HEAT - C1 & C2 & DHW ?,
 
 MODE is 32 when CYCLE 1 is OFF, when COOL MODE on CYCLE1 is enabled it changes to 9.
-PUMP ? becomes 1 when cooling is enabled. Change to 17 when water pump is running. <- **EDIT: NOT 100% SURE** (PUMP SEEMS TO RUN EVEN WHEN PUMP=1 , MAYBE 1->CYCLE 1 ENABLED AND 17-> CYCLE1&ROOM1 ENABLED)
+
+#### IDU CONFIGURATION
+IDU CONFIGURATION becomes 1 when cooling is enabled. Change to 17 when water pump is running. <- **EDIT: NOT 100% SURE** (PUMP SEEMS TO RUN EVEN WHEN PUMP=1 , MAYBE 1->CYCLE 1 ENABLED AND 17-> CYCLE1&ROOM1 ENABLED)
 WATER SET TEMP IS SET WHEN CYCLE 1 IS ENABLED
 
 |SRC | CTRL | LEN | DEV_ID | - | DEV_ID | - | - | WATER OUT TEMP ? | | | ? | | | WATER SET TEMP | | AMBIENT TEMP (SIMILAR VALUE) |  | REQUESTED PUMP PWM | | FLOW ?| | | | | | | | | ? | | CRC | 
