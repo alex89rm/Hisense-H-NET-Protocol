@@ -170,6 +170,7 @@ Multiple parameters can also be concatenated in a message  in the following way:
 These are the parameters ID :
 | DESCRIPTION |PARAMETER ID |
 |--|--|
+| WRITE_LOCK1           | 0 |
 | **MODE**              | 1 |
 | CYCLE MODE?           | 2 |
 | **CYCLE1 WATER TEMP** | 3 |
@@ -178,7 +179,7 @@ These are the parameters ID :
 | **POOL SET TEMP**     | 6 |
 | **ERROR CODE**     | 7 |
 | ?     | 8 |
-| ?     | 9 |
+| WRITE_LOCK2     | 9 |
 | **CYCLE1 ROOM1 SET TEMP**        | 10 |
 | CYCLE1 ROOM2 SET TEMP **?**     | 11 |
 | CYCLE1 ROOM3 SET TEMP **?**     | 12 |
