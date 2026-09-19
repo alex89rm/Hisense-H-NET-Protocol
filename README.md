@@ -1,15 +1,15 @@
-# Hisense H-NET-Protocol
+# Hisense/Hitachi H-NET-Protocol
 
 ## Ready-to-use hardware units
 
-This repository documents my reverse engineering work on the Hisense H-Net protocol.
-Based on that work, I have also built a small batch of ready-to-use HBS Bridge hardware units for integrating Hisense Hi-Therma heat pumps with Home Assistant via MQTT autodiscovery.
+This repository documents my reverse engineering work on the Hisense/Hitachi H-Net protocol.
+Based on that work, I have also built a small batch of ready-to-use HBS Bridge hardware units for integrating Hisense Hi-Therma and Hitachi Air H₂O 400 heat pumps with Home Assistant via MQTT autodiscovery.
 More details are available here:
 
 https://hbscontroller.alessiovaleri.it/
 
 # Project description 
-This project aims to reverse engineer the H-NET protocol used in the Hi-Therma unit lineup, allowing direct control of the machines without depending on the Hisense cloud platform.. A custom Home Assistant component will be developed too.
+This project aims to reverse engineer the H-NET protocol used in the Hi-Therma/Air H₂O 400 unit lineup, allowing direct control of the machines without depending on the proprietary cloud platform. A custom Home Assistant component will be developed too.
 
 * [H-NET PROTOCOL](docs/H-NET_PROTOCOL.md)
   * [Physical Level](docs/H-NET_PROTOCOL.md#physical-level) 
