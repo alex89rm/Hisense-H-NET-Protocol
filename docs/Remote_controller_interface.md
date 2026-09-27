@@ -322,13 +322,13 @@ REQUESTED PUMP PWM -> I THINK IT IS REQUESTED PWM BECAUSE WHEN VALUE IS 100 (PWM
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 |35|0|14|1|0|1|1|254|16|32|16|32|0|241|
 
-|SRC | CTRL | LEN | DEV_ID | | DEV_ID | | | | OUTDOOR TEMP ? | | EVAP GAS TEMP | | DISCHARGER TEMPERATURE | | ~~IDU LIQUID TEMP~~ | | FREQUENCE | CURRENT | EVO% | | | | | | |  | CRC |
+|SRC | CTRL | LEN | DEV_ID | | DEV_ID | | | | OUTDOOR TEMP | | EVAP GAS TEMP | | DISCHARGER TEMPERATURE | | ~~TEMP~~ | | FREQUENCY | CURRENT | EVO% | | | | | | |  | CRC |
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 |35|0|28|1|0|1|255|242|3|22|128| **25** |0| **51** |128| **17** |110|0|0|0|41|41|1|3|241|208|0|114|
 
 
 
-|SRC | CTRL | LEN | DEV_ID | | DEV_ID | | | *BYTE_H | *BYTE_L |*DEFROST(BIT3) | *ALARM CODE | *CAUSE OF STOPPAGE | | | | | OUTDOOR TEMP | | EVAP GAS TEMP | | DISCHARGER TEMPERATURE |  | ~~IDU LIQUID TEMP~~ | | FREQUENCE | CURRENT | EVO% | | | | | | | | CRC | 
+|SRC | CTRL | LEN | DEV_ID | | DEV_ID | | | *BYTE_H | *BYTE_L |*DEFROST(BIT3) | *ALARM CODE | *CAUSE OF STOPPAGE | | | | | OUTDOOR TEMP | | EVAP GAS TEMP | | DISCHARGER TEMPERATURE |  | ~~TEMP~~ | | FREQUENCY | CURRENT | EVO% | | | | | | | | CRC | 
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 |35|0|36|1|0|1|1|255|0|40|32|0|0|0|2|0|3|20|128| **22** |0| **42** |128| **14**| 100|0|0|0|41|41|1|3|241|208|0|178|
 
