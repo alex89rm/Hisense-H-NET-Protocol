@@ -171,12 +171,12 @@ These are the parameters ID :
 | DESCRIPTION |PARAMETER ID |
 |--|--|
 | WRITE_LOCK1           | 0 |
-| **MODE**              | 1 |
-| CYCLE MODE?           | 2 |
+| **MODE & CIRCUIT ENABLE**              | 1 |
+| ECO & OPERATING FLAGS?           | 2 |
 | **CYCLE1 WATER SETPOINT** | 3 |
 | **CYCLE2 WATER SETPOINT** | 4 |
-| **DHW SET TEMP**      | 5 |
-| **POOL SET TEMP**     | 6 |
+| **DHW SETPOINT**      | 5 |
+| **POOL SETPOINT**     | 6 |
 | **ERROR CODE**     | 7 |
 | **CAUSE OF STOPPAGE**     | 8 |
 | WRITE_LOCK2     | 9 |
@@ -194,8 +194,8 @@ These are the parameters ID :
 | **PUMP STATUS**  | 21 |
 | OPERATION FLAGS        | 22 |
 | OPERATION REQUESTS     | 23 |
-| CYCLE1 OTC CORRECTION  | 24 |
-| CYCLE2 OTC CORRECTION  | 25 |
+| CYCLE1 OTC ADJUSTMENT  | 24 |
+| CYCLE2 OTC ADJUSTMENT  | 25 |
 
 #### MODE
 
