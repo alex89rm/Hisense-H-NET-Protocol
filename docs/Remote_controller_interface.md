@@ -173,12 +173,12 @@ These are the parameters ID :
 | WRITE_LOCK1           | 0 |
 | **MODE**              | 1 |
 | CYCLE MODE?           | 2 |
-| **CYCLE1 WATER TEMP** | 3 |
-| **CYCLE2 WATER TEMP** | 4 |
+| **CYCLE1 WATER SETPOINT** | 3 |
+| **CYCLE2 WATER SETPOINT** | 4 |
 | **DHW SET TEMP**      | 5 |
 | **POOL SET TEMP**     | 6 |
 | **ERROR CODE**     | 7 |
-| ?     | 8 |
+| **CAUSE OF STOPPAGE**     | 8 |
 | WRITE_LOCK2     | 9 |
 | **CYCLE1 ROOM1 SET TEMP**        | 10 |
 | CYCLE1 ROOM2 SET TEMP **?**     | 11 |
@@ -192,7 +192,10 @@ These are the parameters ID :
 | **ROOM ECO MODE?**       | 19 |
 | DHW STATUS           | 20 |
 | **PUMP STATUS**  | 21 |
-| WATER PUMP CONFIG?        | 22 |
+| OPERATION FLAGS        | 22 |
+| OPERATION REQUESTS     | 23 |
+| CYCLE1 OTC CORRECTION  | 24 |
+| CYCLE2 OTC CORRECTION  | 25 |
 
 #### MODE
 
@@ -222,6 +225,21 @@ This parameter sets the working mode of the unit: HEAT / COOL / AUTO. Only one o
 |BIT 7 |BIT 6 |BIT 5 |BIT 4 |BIT 3 |BIT 2 |BIT 1 |BIT 0 |
 |--|--|--|--|--|--|--|--|
 | WP ECO MODE HEAT | WP ECO MODE COOL  | 1 | 0 | 0 | 0 | 0 | 0 |
+
+
+#### OPERATION FLAGS 1 (TO BE CONFIRMED)
+
+| BIT 7 | BIT 6  | BIT 5 | BIT 4 | BIT 3 | BIT 2 |  BIT 1| BIT 0 |
+|--|--|--|--|--|--|--|--|
+| |  | COOLING MODE? | DEFROST ACTIVE | DHW BOOST ACTIVE | ? | ? | ? |
+
+
+#### OPERATION REQUESTS (TO BE CONFIRMED)
+
+| BIT 7 | BIT 6  | BIT 5 | BIT 4 | BIT 3 | BIT 2 |  BIT 1| BIT 0 |
+|--|--|--|--|--|--|--|--|
+| |  |  |  | LEGIONELLA PROTECTION MODE REQUEST | DHW BOOST REQUEST | NIGHT MODE REQUEST | QUIET MODE REQUEST |
+
 
 #### STATUS UPDATE MESSAGE
 
