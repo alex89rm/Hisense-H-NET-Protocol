@@ -190,7 +190,7 @@ These are the parameters ID :
 | CYCLE2 ROOM4 SET TEMP **?**    | 17 |
 | **ROOM ENABLE**       | 18 |
 | **ROOM ECO MODE?**       | 19 |
-| DHW STATUS           | 20 |
+| EQUIPMENT & ENABLE FLAG           | 20 |
 | **PUMP STATUS**  | 21 |
 | OPERATION FLAGS        | 22 |
 | OPERATION REQUESTS     | 23 |
@@ -212,8 +212,10 @@ This parameter sets the working mode of the unit: HEAT / COOL / AUTO. Only one o
 |--|--|--|--|--|--|--|--|
 |? | ? | ? |  PUMP ENABLE ? | ? | ? |CYCLE2 ECO MODE| CYCLE1 ECO MODE |
 
-#### DHW STATUS
-0 DHW OFF, 128 DHW ON
+#### EQUIPMENT & ENABLE FLAG
+| BIT 7 | BIT 6  | BIT 5 | BIT 4 | BIT 3 | BIT 2 |  BIT 1| BIT 0 |
+|--|--|--|--|--|--|--|--|
+| DHW ENABLED | POOL ENABLED | 0 | AUX STATE? | DHW RESISTOR? | ? | ? | SOLAR ACTIVITY? |
 
 #### PUMP STATUS
 0 PUMP OFF, 128 PUMP RUNNING
@@ -238,7 +240,7 @@ This parameter sets the working mode of the unit: HEAT / COOL / AUTO. Only one o
 
 | BIT 7 | BIT 6  | BIT 5 | BIT 4 | BIT 3 | BIT 2 |  BIT 1| BIT 0 |
 |--|--|--|--|--|--|--|--|
-| |  |  |  | LEGIONELLA PROTECTION MODE REQUEST | DHW BOOST REQUEST | NIGHT MODE REQUEST | QUIET MODE REQUEST |
+| |  |  |  | ANTI-LEGIONELLA REQUEST | DHW BOOST REQUEST | NIGHT MODE REQUEST | QUIET MODE REQUEST |
 
 
 #### STATUS UPDATE MESSAGE
